@@ -1,12 +1,20 @@
 @media screen and (max-width:762px){
     main{
         width: 90vw;
-        height: 90vh;
+        height: 140vh;
         flex-flow: column-reverse nowrap;
         .first{
             text-align: center;
             width: 100%;
             min-height: 60%;
+            .two{
+                flex-flow: column nowrap;
+                align-items: center;
+                justify-content: inherit !important;
+                .col{   
+                    margin: 2rem 0 ;
+                }
+            }
         }
         .second{
             overflow: hidden;
@@ -21,6 +29,7 @@
         }
     }
     footer{
-        display: none;
+        bottom: -50%;
+        margin-bottom: 1rem;
     }
 }
