@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Lexend Deca', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  background: #090b1a;
+}
+
+main {
+  border-radius: .8rem;
+  overflow: hidden;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 80vw;
+  height: 50vh;
+}
+
+main .first {
+  width: 40vw;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  background: #1b1938;
+}
+
+main .first .one h1 {
+  font-size: 3rem;
+  margin: 2rem 1rem 1rem 2rem;
+}
+
+main .first .one h1 .vu {
+  color: #aa5cdb;
+}
+
+main .first .one p {
+  margin-left: 2rem;
+  font-size: 1.35rem;
+  line-height: 1.9rem;
+}
+
+main .first .two {
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+main .second {
+  position: relative;
+  width: 40vw;
+  height: 100%;
+}
+
+main .second .desk img, main .second .mob img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+main .second::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(170, 92, 219, 0.4);
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+@media screen and (max-width: 762px) {
+  main {
+    width: 90vw;
+    height: 90vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse nowrap;
+            flex-flow: column-reverse nowrap;
+  }
+  main .first {
+    text-align: center;
+    width: 100%;
+    min-height: 60%;
+  }
+  main .second {
+    overflow: hidden;
+    width: 100%;
+    min-height: 40%;
+  }
+  main .second .desk img {
+    width: 100% !important;
+    height: 50% !important;
+  }
+  footer {
+    display: none;
+  }
+}
+/*# sourceMappingURL=index.css.map */

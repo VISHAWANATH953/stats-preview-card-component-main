@@ -1,0 +1,26 @@
+@media screen and (max-width:762px){
+    main{
+        width: 90vw;
+        height: 90vh;
+        flex-flow: column-reverse nowrap;
+        .first{
+            text-align: center;
+            width: 100%;
+            min-height: 60%;
+        }
+        .second{
+            overflow: hidden;
+            width: 100%;
+            min-height: 40%;
+            .desk{
+                img{
+                    width: 100% !important;
+                    height:50% !important;
+                }
+            }
+        }
+    }
+    footer{
+        display: none;
+    }
+}
